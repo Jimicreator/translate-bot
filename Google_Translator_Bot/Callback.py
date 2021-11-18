@@ -39,7 +39,7 @@ async def translate_text(bot,update):
                 [
                     InlineKeyboardButton
                         (
-                            text = '❎️ Close ❎️', callback_data = 'trdelete'
+                            text = ' Close ❎️', callback_data = 'trdelete'
                         )
                 ]
             ]
@@ -51,4 +51,4 @@ async def callback(client, query_callback):
     if query_callback.data == "trdelete":
        await query_callback.message.delete()
     elif query_callback.data == "credits":
-       await query_callback.message.edit_text(Translation.CREDITS, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("Muhammed RK", url="https://github.com/PR0FESS0R-99") ],[ InlineKeyboardButton("Shahsad-klr", url="https://github.com/shahsad-klr") ],[ InlineKeyboardButton("Lntechnical2", url="https://github.com/lntechnical2") ]] ))   
+       await query_callback.message.edit_text(Translation.CREDITS, reply_markup=InlineKeyboardMarkup( [[ InlineKeyboardButton("JIMI BOTS", url="https://t.me/Jimi_Bots") ],[ InlineKeyboardButton("Our Group", url="https://t.me/jimibots_grp") ]] ))   
